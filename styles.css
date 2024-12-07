@@ -9,7 +9,7 @@ body {
 /* Header */
 .header {
     background-color: #68b2ff; /* Dark sky blue */
-    color: #fff;
+    color: #333;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
