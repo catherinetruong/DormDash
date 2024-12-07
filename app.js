@@ -1,22 +1,9 @@
-const carousel = document.querySelector('.restaurants-list');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+// Placeholder for future interactivity
+console.log("FoodieDash App Loaded");
 
-let currentIndex = 0;
-const cardWidth = carousel.querySelector('.restaurant-card').offsetWidth + 10; // Including gap
-const totalCards = carousel.children.length;
-const visibleCards = 4;
-
-prevBtn.addEventListener('click', () => {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    updateCarousel();
+// Example functionality: Alert when clicking a restaurant
+document.querySelectorAll('.restaurant-card').forEach(card => {
+    card.addEventListener('click', () => {
+        alert(`${card.querySelector('h3').textContent} selected!`);
+    });
 });
-
-nextBtn.addEventListener('click', () => {
-    currentIndex = Math.min(currentIndex + 1, totalCards - visibleCards);
-    updateCarousel();
-});
-
-function updateCarousel() {
-    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-}
