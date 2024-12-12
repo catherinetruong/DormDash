@@ -129,6 +129,95 @@ body {
     transform: scale(1.02);
 }
 
+/* Cart Styles */
+.add-to-cart-section {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.cart-section {
+    padding: 1rem;
+}
+
+.cart-section h2 {
+    padding-bottom: 10px;
+}
+
+.cart-item {
+    margin-left: 15px;;
+}
+
+.item-details li {
+    padding: 5px;
+}
+
+/* Add hover effect */
+.add-to-cart-section:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.confirm-order {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+/* Add hover effect */
+.confirm-order:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+/* Orders Styles */
+
+.active-orders-section {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.active-order {
+    margin-left: 15px;
+}
+
+.order-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.order-details {
+    justify-self: center;
+    margin-left: 75px;
+}
+
+.order-details strong {
+    margin-right: 30px;
+}
+
+.past-orders-section {
+    margin-left: 15px;
+}
+
+.past-order {
+    margin-left: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Profile Styles */
+
 .profile-container {
     max-width: 800px;
     margin: 20px auto;
