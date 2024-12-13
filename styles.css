@@ -1,0 +1,348 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #68b2ff; /* Dark sky blue */
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+}
+
+.nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+.restaurants-section {
+    margin-top: 1rem;
+}
+
+.restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.restaurant-card {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-card:focus {
+    outline: 2px solid #007BFF;
+    outline-offset: 2px;
+}
+
+.restaurant-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.restaurants-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.restaurant-card:visited {
+    color:#000;
+}
+
+/* Menu Page */
+.menu-section {
+    margin-top: 1rem;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.menu-items {
+    display: grid;
+    gap: 0.5rem;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.menu-item-click {
+    background-color: #f1f1f1;
+    transform: scale(1.02);
+}
+
+.menu-item .item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Menu Item Description Styles */
+.menu-item .description {
+    font-size: 0.875rem;  /* Smaller font size */
+    color: #666;  /* Lighter text color for description */
+    margin-top: 0.5rem;  /* Spacing between item title and description */
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #333; /* A green color for the price */
+}
+
+.add-to-cart-section a {
+    text-decoration: none;
+}
+
+.add-to-cart-section a:visited {
+    color: #000;
+}
+
+.add-to-cart-button {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Cart Styles */
+
+.cart-section {
+    padding: 1rem;
+}
+
+.cart-section h2 {
+    padding-bottom: 10px;
+}
+
+.cart-item {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.item-details li {
+    padding: 5px;
+}
+
+.confirm-order-section a {
+    text-decoration: none;
+}
+
+.confirm-order-section a:visited {
+    color: #000;
+}
+
+.confirm-order {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+/* Add hover effect */
+.confirm-order:hover {
+    background-color: #f1f1f1;
+}
+
+/* Orders Styles */
+
+.active-orders-section {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+.active-order {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.order-status {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.order-details {
+    justify-self: center;
+    margin-left: 75px;
+    padding-top: 15px;
+}
+
+.order-details strong {
+    margin-right: 30px;
+}
+
+.past-orders-section {
+    margin-left: 15px;
+}
+
+.past-order {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Profile Styles */
+
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1 {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.additional-info {
+    text-align: center;
+}
+
+.additional-info h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.additional-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #5a9bd3; /* Dark sky blue */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
