@@ -1,5 +1,5 @@
 // Placeholder for future interactivity
-console.log("FoodieDash App Loaded");
+console.log("DormDash App Loaded");
 
 // Updates menu item style on click
 document.querySelectorAll('.menu-item').forEach(card => {
